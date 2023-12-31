@@ -10,28 +10,9 @@ TEST_URL = 'google.com'
         stage('Hello') {
             steps {
                 echo 'Hello World'
+               sh 'ansible -i 172.31.16.126, all -e ansible_user=${SSH_USER} -e ansible_password =${SSH_PSW} -m ping'
             }
         }
-        stage('build') {
-            steps {
-                echo 'build'
-            }
-        }
-        stage('compile') {
-            steps {
-                echo 'compile'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'test'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploy'
-                fileExists 'file existed'
-            }
-        }
+
     }
 }
