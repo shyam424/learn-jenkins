@@ -9,11 +9,11 @@ pipeline {
         }
     }
     stages {
-            stage('hey') {
-                steps {
+         stage('hey') {
+             steps {
                     echo 'Hello hey'
-                }
             }
         }
+    }
 
 }
