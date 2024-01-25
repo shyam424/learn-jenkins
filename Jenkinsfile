@@ -20,6 +20,7 @@ pipeline {
         stage('security') {
             steps {
                 echo 'Hello World'
+                error 'its wrong'
             }
         }
     }
