@@ -1,6 +1,10 @@
 pipeline {
-    agent any
+    //agent any
+    agent { node { label 'workstation' } }
 
+    environment {
+    TEST_URL = "google.com"
+    }
     stages {
         stage('Hello') {
             steps {
