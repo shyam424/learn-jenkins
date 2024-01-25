@@ -21,11 +21,7 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('security') {
-            steps {
-                error 'its wrong'
-            }
-        }
+
 
     }
 }
