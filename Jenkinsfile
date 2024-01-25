@@ -8,17 +8,8 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
-            }
-        }
-        stage('test') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-        stage('code') {
-            steps {
-                echo 'Hello World'
+                //echo 'Hello World'
+                echo TEST_URL
             }
         }
 
